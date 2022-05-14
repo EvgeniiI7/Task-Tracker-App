@@ -19,12 +19,11 @@ var taskFormHandler = function (event) {
       //  By using the condition shown in the following code, we're seeing if either (taskNameInput) or (taskTitleInput) is empty,
       // or if both are empty. Putting an exclamation point ( ! ) in front of the variable name will make the condition return (true) if the value evaluates to false.
       // literally says, "if either one or both of the variables are not true, then proceed," which is the same as "if either one or both of the variables are false, then proceed."
-    
-      alert("You need to fill out the task form!");
+    alert("You need to fill out the task form!");
     return false;
   }
 
-  // reset form fields for next task to be entered
+  // Reset form fields for next task to be entered
   document.querySelector("input[name='task-name']").value = "";
   document.querySelector("select[name='task-type']").selectedIndex = 0;
 
@@ -76,7 +75,7 @@ var createTaskEl = function(taskDataObj) {
       console.log("Something went wrong!");
   }
 
-  // save task as an object with name, type, status, and id properties then push it into tasks array
+  // Save task as an object with NAME, TYPE, STATUS, and ID properties then push it into tasks array
   taskDataObj.id = taskIdCounter;
 
   tasks.push(taskDataObj);
@@ -99,7 +98,8 @@ var createTaskActions = function (taskId) {
   editButtonEl.className = "btn edit-btn";
   editButtonEl.setAttribute("data-task-id", taskId);
   actionContainerEl.appendChild(editButtonEl);
-  // create delete button
+
+  // Add Ability to Delete a Task
   var deleteButtonEl = document.createElement("button");
   deleteButtonEl.textContent = "Delete";
   deleteButtonEl.className = "btn delete-btn";
@@ -111,9 +111,9 @@ var createTaskActions = function (taskId) {
   statusSelectEl.setAttribute("data-task-id", taskId);
   statusSelectEl.className = "select-status";
   actionContainerEl.appendChild(statusSelectEl);
-  // create status options
+  // create status options. method Array
   var statusChoices = ["To Do", "In Progress", "Completed"];
-
+  // (For) loop logic 
   for (var i = 0; i < statusChoices.length; i++) {
     // create option element
     var statusOptionEl = document.createElement("option");
@@ -133,7 +133,7 @@ var completeEditTask = function (taskName, taskType, taskId) {
     ".task-item[data-task-id='" + taskId + "']"
   );
 
-  // set new values
+  // Set new values
   taskSelected.querySelector("h3.task-name").textContent = taskName;
   taskSelected.querySelector("span.task-type").textContent = taskType;
 
@@ -252,7 +252,7 @@ var deleteTask = function (taskId) {
 };
 
 var saveTasks = function () {
-  localStorage.setItem("tasks", JSON.stringify(tasks));
+  localStorage.setItem("tasks", JSON.stringify(tasks)); // JSON stands for JavaScript Object Notation, which is a means of organizing and structuring data that's transferred from one place to another.
 };
 
 var loadTasks = function () {
