@@ -15,8 +15,12 @@ var taskFormHandler = function (event) {
   var taskTypeInput = document.querySelector("select[name='task-type']").value;
 
   // check if inputs are empty (validate)
-  if (!taskNameInput || !taskTypeInput) {
-    alert("You need to fill out the task form!");
+  if (!taskNameInput || !taskTypeInput) { 
+      //  By using the condition shown in the following code, we're seeing if either (taskNameInput) or (taskTitleInput) is empty,
+      // or if both are empty. Putting an exclamation point ( ! ) in front of the variable name will make the condition return (true) if the value evaluates to false.
+      // literally says, "if either one or both of the variables are not true, then proceed," which is the same as "if either one or both of the variables are false, then proceed."
+    
+      alert("You need to fill out the task form!");
     return false;
   }
 
@@ -254,7 +258,7 @@ var saveTasks = function () {
 var loadTasks = function () {
   var savedTasks = localStorage.getItem("tasks");
   // if there are no tasks, set tasks to an empty array and return out of the function
-  if (!savedTasks) {
+  if (!savedTasks) { // the ! is used to check for the opposite value.
     return false;
   }
   console.log("Saved tasks found!");
