@@ -25,3 +25,4 @@ Build with:
 * Tracked technical debt and refactor the code as needed.
 
 <img src="https://user-images.githubusercontent.com/88345845/168444054-4bb7b8ef-ba7a-4087-8bf7-e67250869dd0.jpg" width="500"/>
+<img src="https://user-images.githubusercontent.com/88345845/168444156-c1668c0e-c9fc-4b6f-8e11-7409caede0a9.jpg" width="500/>
