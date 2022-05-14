@@ -23,3 +23,5 @@ Build with:
 * Sync the data with the display in the browser.
 * Save data using ``` localStorage``` , and serialize and de-serialize the data using ``` JSON.stringify()```  and ```JSON.parse()```.
 * Tracked technical debt and refactor the code as needed.
+
+<img src=" " width="500"/>
