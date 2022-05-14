@@ -1,6 +1,6 @@
 # Taskinator-Task-Tracker-App
 
-## That is front-end project.
+## That is a front-end project.
 
 ``` 
 Taskinator will allow you to organize your personal to-do list items
