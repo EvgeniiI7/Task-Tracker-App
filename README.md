@@ -12,6 +12,8 @@ Build with:
 . HTMl
 . CSS
 
+deployed app:
+https://evgeniii7.github.io/Task-Tracker-App/
 
 * Access the DOM using methods ```addEventListener()```, ```querySelector()``` , ```createElement()``` , ``` setAttribute```, ```and getAttribute()``` .
 * Added interactivity with HTML by adding browser event listeners such as ```click``` , ```submit``` , and ```change``` 
