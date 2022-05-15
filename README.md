@@ -12,7 +12,7 @@ Build with:
 . HTMl
 . CSS
 
-deployed app:
+Website:
 https://evgeniii7.github.io/Task-Tracker-App/
 
 * Access the DOM using methods ```addEventListener()```, ```querySelector()``` , ```createElement()``` , ``` setAttribute```, ```and getAttribute()``` .
